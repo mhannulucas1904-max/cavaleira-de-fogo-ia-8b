@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cavaleira de Fogo — Através das Eras</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <div class="frame"><canvas id="game" aria-label="Jogo: cavaleira de fogo atravessa cinco eras enfrentando goblins"></canvas></div>
+  <div class="bar">
+    <p class="hint"><b>← →</b> mover &nbsp; <b>↑ / Espaço</b> pular &nbsp; <b>X</b> bola de fogo &nbsp; <b>P</b> pausa &nbsp; <b>M</b> som</p>
+    <div class="mini">
+      <button id="btnPause" type="button">Pausar</button>
+      <button id="btnMute" type="button">Som: ligado</button>
+    </div>
+  </div>
+  <div class="pad">
+    <div class="grp"><button data-act="left" aria-label="Esquerda">◀</button><button data-act="right" aria-label="Direita">▶</button></div>
+    <div class="grp"><button data-act="fire" aria-label="Bola de fogo">🔥</button><button data-act="jump" aria-label="Pular">▲</button></div>
+  </div>
+</main>
+
+<script src="game.js"></script>
+</body>
+</html>
